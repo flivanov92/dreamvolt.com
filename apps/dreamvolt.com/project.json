@@ -1,0 +1,54 @@
+{
+  "root": "apps/dreamvolt.com",
+  "sourceRoot": "apps/dreamvolt.com",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/dreamvolt.com",
+        "outputPath": "dist/apps/dreamvolt.com"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "dreamvolt.com:build",
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "dreamvolt.com:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "dreamvolt.com:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/dreamvolt.com"],
+      "options": {
+        "jestConfig": "apps/dreamvolt.com/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dreamvolt.com/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "dreamvolt.com": "apps/dreamvolt.com",
+    "dreamvolt.com-e2e": "apps/dreamvolt.com-e2e"
+  }
 }

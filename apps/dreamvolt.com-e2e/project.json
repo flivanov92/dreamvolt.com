@@ -1,0 +1,28 @@
+{
+  "root": "apps/dreamvolt.com-e2e",
+  "sourceRoot": "apps/dreamvolt.com-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/dreamvolt.com-e2e/cypress.json",
+        "devServerTarget": "dreamvolt.com:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "dreamvolt.com:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dreamvolt.com-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["dreamvolt.com"]
+}
