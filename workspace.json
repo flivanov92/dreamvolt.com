@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "dreamvolt.com": "apps/dreamvolt.com",
-    "dreamvolt.com-e2e": "apps/dreamvolt.com-e2e"
+    "dreamvolt.com-e2e": "apps/dreamvolt.com-e2e",
+    "ui": "libs/ui"
   }
 }
