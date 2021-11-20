@@ -3,6 +3,8 @@
   "projects": {
     "dreamvolt.com": "apps/dreamvolt.com",
     "dreamvolt.com-e2e": "apps/dreamvolt.com-e2e",
+    "transport": "apps/transport",
+    "transport-e2e": "apps/transport-e2e",
     "ui": "libs/ui"
   }
 }
