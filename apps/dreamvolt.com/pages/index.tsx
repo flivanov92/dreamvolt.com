@@ -15,7 +15,7 @@ export function Index() {
     {
       title: 'mynav is cool',
       destination: '/',
-      text: 'home',
+      text: 'home122',
       linkType: 'normal',
       color: 'blue',
     },

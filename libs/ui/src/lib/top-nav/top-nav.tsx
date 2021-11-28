@@ -5,8 +5,8 @@ const TopNav = ({ linkList }: T.TopNav) => {
   return (
     <div>
       {linkList.map(
-        ({ color, destination, linkType, title, text }: T.LinkNav) => (
-          <a title={title} href={destination}>
+        ({ color, destination, linkType, title, text }: T.LinkNav, cheie) => (
+          <a title={title} href={destination} key={cheie}>
             {text}
           </a>
         )
