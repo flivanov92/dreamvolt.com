@@ -18,7 +18,7 @@ function Index() {
         {
             title: 'mynav is cool',
             destination: '/',
-            text: 'home122',
+            text: 'home',
             linkType: 'normal',
             color: 'blue'
         },

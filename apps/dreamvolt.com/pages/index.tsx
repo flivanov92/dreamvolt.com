@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Logo, TopNav } from '@ai/ui';
+import { Logo, TopNav, Text } from '@ai/ui';
 const StyledPage = styled.div`
   .page {
   }
@@ -15,7 +15,7 @@ export function Index() {
     {
       title: 'mynav is cool',
       destination: '/',
-      text: 'home122',
+      text: 'home',
       linkType: 'normal',
       color: 'blue',
     },
@@ -52,6 +52,10 @@ export function Index() {
     <StyledPage>
       <Logo imagePath="dv.jpg" size="small" title="salut" />
       <TopNav linkList={linkList} />
+
+      <Text text="Dream" color="green" />
+      <Text text="Belive" color="grey" />
+      <Text text="Achieve" color="grey" />
     </StyledPage>
   );
 }
