@@ -7,20 +7,12 @@ const Text = ({ text, color }: T.Text) => {
   return <S.Text color={color}>{text}</S.Text>;
 };
 
-const UnorderedList = ({ children, color, text }: T.StyledList) => {
-  return (
-    <S.UnorderedList text={text} color={color}>
-      {children}
-    </S.UnorderedList>
-  );
+const UnorderedList = ({ children, color }: T.UnorderedList) => {
+  return <S.UnorderedList color={color}>{children}</S.UnorderedList>;
 };
 
-const NormalList = ({ text, color }: T.StyledList) => {
-  return (
-    <S.NormalList text={text} color={color}>
-      {text}
-    </S.NormalList>
-  );
+const NormalList = ({ text, color }: T.NormalList) => {
+  return <S.NormalList color={color}>{text}</S.NormalList>;
 };
 
 Text.defaultprops = {

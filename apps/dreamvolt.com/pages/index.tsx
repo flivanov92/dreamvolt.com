@@ -49,16 +49,10 @@ export function Index() {
     <ThemeProvider theme={theme}>
       <Logo imagePath="dv.jpg" size="small" title="salut" />
       <TopNav linkList={linkList} />
-      <UnorderedList text="asda" color="grey">
-        <NormalList text="Engage" color="pink">
-          Engage
-        </NormalList>
-        <NormalList text="Motivate" color="blue">
-          Motivate
-        </NormalList>
-        <NormalList text="Achieve" color="green">
-          Achieve
-        </NormalList>{' '}
+      <UnorderedList color="grey">
+        <NormalList color="pink">Engage</NormalList>
+        <NormalList color="blue">Motivate</NormalList>
+        <NormalList color="green">Achieve</NormalList>{' '}
       </UnorderedList>
       <Text text="Dream" color="grey" />
       <Text text="Belive" color="grey" />

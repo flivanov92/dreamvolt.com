@@ -13,5 +13,11 @@ export interface StyledText {
 export interface StyledList {
   children?: ReactNode;
   color: color;
+}
+export interface NormalList extends StyledList {
+  text: string;
+}
+
+export interface UnorderedList extends StyledList {
   text: string;
 }
