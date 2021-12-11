@@ -6,9 +6,16 @@ const Text = ({ text, color }: T.Text) => {
   return <S.Text color={color}>{text}</S.Text>;
 };
 
+const unorderedList = ({ children }: T.StyledList) => {
+  return <S.unorderedList>{children}</S.unorderedList>;
+};
+
 Text.defaultprops = {
   text: 'mytext',
   color: 'orange',
 };
 
+unorderedList.defaultprops = {
+  childred: 'null',
+};
 export default Text;
