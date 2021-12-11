@@ -1,9 +1,6 @@
-import styled from 'styled-components';
-import { Logo, TopNav, Text } from '@ai/ui';
-const StyledPage = styled.div`
-  .page {
-  }
-`;
+import { ThemeProvider } from 'styled-components';
+import { Logo, TopNav, Text, theme } from '@ai/ui';
+import { UnorderedList, NormalList } from 'libs/ui/src/lib/text/text.style';
 
 export function Index() {
   /*
@@ -49,14 +46,24 @@ export function Index() {
     },
   ];
   return (
-    <StyledPage>
+    <ThemeProvider theme={theme}>
       <Logo imagePath="dv.jpg" size="small" title="salut" />
       <TopNav linkList={linkList} />
-
-      <Text text="Dream" color="green" />
+      <UnorderedList text="asda" color="grey">
+        <NormalList text="Engage" color="pink">
+          Engage
+        </NormalList>
+        <NormalList text="Motivate" color="blue">
+          Motivate
+        </NormalList>
+        <NormalList text="Achieve" color="green">
+          Achieve
+        </NormalList>{' '}
+      </UnorderedList>
+      <Text text="Dream" color="grey" />
       <Text text="Belive" color="grey" />
       <Text text="Achieve" color="grey" />
-    </StyledPage>
+    </ThemeProvider>
   );
 }
 
