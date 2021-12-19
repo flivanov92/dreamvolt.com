@@ -6,6 +6,7 @@ const theme: DefaultTheme = {
     green: '#0bc324fc',
     blue: '#12befff7',
     pink: '#e70fc6fa',
+    orange: '#f8ab18',
   },
 };
 

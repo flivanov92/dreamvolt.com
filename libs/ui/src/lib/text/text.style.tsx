@@ -26,3 +26,16 @@ export const NormalList = styled.li<T.StyledList>`
   font-family: Rubik;
   list-style-type: none;
 `;
+
+export const HeaderThree = styled.h3<T.StyledText>`
+  color: ${({ color = 'orange', theme }) => theme.color[color]};
+  margin-left: 60px;
+  margin-top: 12px;
+`;
+
+export const HeaderFour = styled.h4<T.StyledText>`
+  color: ${({ color = 'orange', theme }) => theme.color[color]};
+  margin-left: 300px;
+  margin-top: 4rem;
+  /* text-align: center; */
+`;

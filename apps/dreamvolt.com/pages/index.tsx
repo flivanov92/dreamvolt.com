@@ -1,6 +1,14 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import { ThemeProvider } from 'styled-components';
-import { Logo, TopNav, Text, theme } from '@ai/ui';
-import { UnorderedList, NormalList } from 'libs/ui/src/lib/text/text.style';
+import { Logo, TopNav, Text, theme, Image } from '@ai/ui';
+import {
+  UnorderedList,
+  NormalList,
+  HeaderThree,
+  HeaderFour,
+} from 'libs/ui/src/lib/text/text.style';
+import Bimage from 'libs/ui/src/lib/image/image';
+import { Pimage } from 'libs/ui/src/lib/image/image';
 
 export function Index() {
   /*
@@ -8,6 +16,7 @@ export function Index() {
    *
    * Note: The corresponding styles are in the ./index.styled-components file.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const linkList: any = [
     {
       title: 'mynav is cool',
@@ -57,6 +66,12 @@ export function Index() {
       <Text text="Dream" color="grey" />
       <Text text="Belive" color="grey" />
       <Text text="Achieve" color="grey" />
+      <Bimage myPath="hero.jpg" type="background" />
+      <Pimage myPath="dreamwall1.png" type="phone" />
+      <HeaderThree color="orange">
+        Achieving your goals just got easier...
+      </HeaderThree>
+      <HeaderFour color="grey">Android is coming soon..</HeaderFour>
     </ThemeProvider>
   );
 }

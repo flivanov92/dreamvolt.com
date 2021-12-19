@@ -3,7 +3,7 @@ import theme from './theme';
 type CustomTheme = typeof theme;
 
 export interface Color {
-  red: string;
+  orange: string;
   green: string;
   blue: string;
   pink: string;

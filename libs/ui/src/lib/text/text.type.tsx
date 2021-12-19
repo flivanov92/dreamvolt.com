@@ -21,3 +21,11 @@ export interface NormalList extends StyledList {
 export interface UnorderedList extends StyledList {
   text: string;
 }
+
+export interface HeaderThree extends StyledText {
+  text: string;
+}
+
+export interface HeaderFour extends StyledText {
+  text: string;
+}
