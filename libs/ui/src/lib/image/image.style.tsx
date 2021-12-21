@@ -5,7 +5,7 @@ export const BackgroundImage = styled.div<T.MyImage>`
   background-position-x: right;
   background-repeat: no-repeat;
   background-size: cover;
-  /* display: grid; */
+  display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
   /* grid-gap: 10px; */
   background-image: url(${({ myPath }) => myPath});
@@ -22,22 +22,16 @@ export const PhoneImage = styled.div<T.MyImage>`
   /* grid-column: 2/3; */
   /* grid-row: 2/4; */
   position: absolute;
-  width: 9%;
-  height: 30%;
+  width: 11%;
+  height: 42%;
+  left: 1000px;
+  bottom: 100px;
+`;
+
+export const Button = styled.div<T.MyImage>`
+  width: ${({ myPath }) => (myPath === 'btn-apple.png' ? 151 : 169)}px;
+  height: 50px;
   background-repeat: no-repeat;
   background-size: cover;
-  left: 900px;
-  bottom: 200px;
-`;
-
-export const AppleButton = styled.div<T.MyImage>`
-  display: flex;
-  margin-left: 20px;
-  position: absolute;
-`;
-
-export const GoogleButton = styled.div<T.MyImage>`
-  margin-left: -200px;
-  display: flex;
-  position: absolute;
+  background-image: url('/image/${({ myPath }) => myPath}');
 `;

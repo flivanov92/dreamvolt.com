@@ -1,25 +1,23 @@
 import * as S from './image.style';
 import * as T from './image.type';
 
-const Bimage = ({ type, myPath }: T.MyImage) => {
-  return <S.BackgroundImage myPath={myPath} type={type} />;
+const BackgroundImage = ({ type, myPath }: T.MyImage) => {
+  switch (type) {
+    case 'button':
+      return <S.Button myPath={myPath} />;
+
+    case 'background':
+      return <S.BackgroundImage myPath={myPath} />;
+
+    case 'phone':
+    default:
+      return <S.PhoneImage myPath={myPath} />;
+  }
 };
 
-const Pimage = ({ type, myPath }: T.MyImage) => {
-  return <S.PhoneImage myPath={myPath} type={type} />;
-};
-// const Pimage = ({type}): T.MyImage) => {
-//     return <S.PhoneImage type="phone"></S.PhoneImage>
-// };
-
-Bimage.defaultProps = {
-  mypath: 'path',
+BackgroundImage.defaultProps = {
+  mypath: '',
   type: 'type of the image',
 };
 
-Pimage.defaultProps = {
-  mypath: 'path',
-  type: 'type of the image',
-};
-export default Bimage;
-export { Pimage };
+export default BackgroundImage;

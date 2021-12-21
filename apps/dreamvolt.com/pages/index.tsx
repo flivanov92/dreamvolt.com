@@ -1,14 +1,14 @@
 /* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import { ThemeProvider } from 'styled-components';
-import { Logo, TopNav, Text, theme, Image } from '@ai/ui';
+import { Logo, TopNav, Text, theme, Image as UIImage } from '@ai/ui';
 import {
   UnorderedList,
   NormalList,
   HeaderThree,
   HeaderFour,
 } from 'libs/ui/src/lib/text/text.style';
-import Bimage from 'libs/ui/src/lib/image/image';
-import { Pimage } from 'libs/ui/src/lib/image/image';
+// import Bimage from 'libs/ui/src/lib/image/image';
+// import { Pimage, Abutton } from 'libs/ui/src/lib/image/image';
 
 export function Index() {
   /*
@@ -61,16 +61,16 @@ export function Index() {
       <UnorderedList color="grey">
         <NormalList color="pink">Engage</NormalList>
         <NormalList color="blue">Motivate</NormalList>
-        <NormalList color="green">Achieve</NormalList>{' '}
+        <NormalList color="green">Achieve</NormalList>
       </UnorderedList>
       <Text text="Dream" color="grey" />
       <Text text="Belive" color="grey" />
       <Text text="Achieve" color="grey" />
-      <Bimage myPath="hero.jpg" type="background" />
-      <Pimage myPath="dreamwall1.png" type="phone" />
       <HeaderThree color="orange">
         Achieving your goals just got easier...
       </HeaderThree>
+      <UIImage myPath="btn-apple.png" type="button" />
+      <UIImage myPath="btn-google.png" type="button" />
       <HeaderFour color="grey">Android is coming soon..</HeaderFour>
     </ThemeProvider>
   );

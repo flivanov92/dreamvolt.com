@@ -1,4 +1,4 @@
 export interface MyImage {
-  type: 'button' | 'background' | 'phone';
-  myPath: string;
+  type?: 'button' | 'background' | 'phone';
+  myPath?: string;
 }
