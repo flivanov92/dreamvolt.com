@@ -2,7 +2,6 @@
 import { ThemeProvider } from 'styled-components';
 import { Logo, TopNav, Text, theme, Image as UIImage } from '@ai/ui';
 import {
-  UnorderedList,
   NormalList,
   HeaderThree,
   HeaderFour,
@@ -59,11 +58,10 @@ export function Index() {
     <ThemeProvider theme={theme}>
       <Logo imagePath="image/dv.jpg" size="small" title="salut" />
       <TopNav linkList={linkList} />
-      <UnorderedList color="grey">
-        <NormalList color="pink">Engage</NormalList>
-        <NormalList color="blue">Motivate</NormalList>
-        <NormalList color="green">Achieve</NormalList>
-      </UnorderedList>
+
+      <NormalList color="pink">Engage</NormalList>
+      <NormalList color="blue">Motivate</NormalList>
+      <NormalList color="green">Achieve</NormalList>
       <Text text="Dream" color="grey" />
       <Text text="Belive" color="grey" />
       <Text text="Achieve" color="grey" />

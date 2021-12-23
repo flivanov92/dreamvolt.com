@@ -6,10 +6,6 @@ const Text = ({ text, color }: T.Text) => {
   return <S.Text color={color}>{text}</S.Text>;
 };
 
-const UnorderedList = ({ children, color }: T.UnorderedList) => {
-  return <S.UnorderedList color={color}>{children}</S.UnorderedList>;
-};
-
 const NormalList = ({ text, color }: T.NormalList) => {
   return <S.NormalList color={color}>{text}</S.NormalList>;
 };
@@ -27,16 +23,10 @@ Text.defaultProps = {
   color: 'onlygrey',
 };
 
-UnorderedList.defaultProps = {
-  children: 'null',
-  color: 'myfav',
-  text: 'text',
-};
-
 NormalList.defaultProps = {
   text: 'newtext',
   color: 'specific colours',
 };
 
 export default Text;
-export { UnorderedList, NormalList, HeaderThree, HeaderFour };
+export { NormalList, HeaderThree, HeaderFour };

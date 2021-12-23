@@ -8,14 +8,6 @@ export const Text = styled.h1<T.StyledText>`
   margin-left: 60px;
 `;
 
-export const UnorderedList = styled.ul<T.StyledList>`
-  color: ${({ color = 'grey', theme }) => theme.color[color]};
-  flex-direction: row;
-  list-style-type: none;
-  display: flex;
-  column-gap: 30px;
-`;
-
 export const NormalList = styled.li<T.StyledList>`
   color: ${({ color = 'myfav', theme }) => theme.color[color]};
   padding: 1rem;
@@ -25,6 +17,8 @@ export const NormalList = styled.li<T.StyledList>`
   box-sizing: border-box;
   font-family: Rubik;
   list-style-type: none;
+  display: inline-block;
+  margin-left: 50px;
 `;
 
 export const HeaderThree = styled.h3<T.StyledText>`
@@ -38,4 +32,10 @@ export const HeaderFour = styled.h4<T.StyledText>`
   margin-left: 250px;
   margin-top: 1rem;
   /* text-align: center; */
+`;
+
+export const HeaderOne = styled.h1<T.StyledList>`
+  color: ${({ color = 'black', theme }) => theme.color[color]};
+  text-align: center;
+  font-size: 36px;
 `;
