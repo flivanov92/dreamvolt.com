@@ -18,6 +18,8 @@ export const BackgroundImage = styled.div<T.MyImage>`
 
 export const PhoneImage = styled.div<T.MyImage>`
   background-image: url(${({ myPath }) => myPath});
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: 30px;
   /* grid-column: 2/3; */
   /* grid-row: 2/4; */
@@ -34,4 +36,6 @@ export const Button = styled.div<T.MyImage>`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('/image/${({ myPath }) => myPath}');
+  display: inline-block;
+  margin-left: 50px;
 `;

@@ -7,6 +7,7 @@ import {
   HeaderThree,
   HeaderFour,
 } from 'libs/ui/src/lib/text/text.style';
+import { BackgroundImage, PhoneImage } from 'libs/ui/src/lib/image/image.style';
 // import Bimage from 'libs/ui/src/lib/image/image';
 // import { Pimage, Abutton } from 'libs/ui/src/lib/image/image';
 
@@ -56,7 +57,7 @@ export function Index() {
   ];
   return (
     <ThemeProvider theme={theme}>
-      <Logo imagePath="dv.jpg" size="small" title="salut" />
+      <Logo imagePath="image/dv.jpg" size="small" title="salut" />
       <TopNav linkList={linkList} />
       <UnorderedList color="grey">
         <NormalList color="pink">Engage</NormalList>
@@ -66,6 +67,9 @@ export function Index() {
       <Text text="Dream" color="grey" />
       <Text text="Belive" color="grey" />
       <Text text="Achieve" color="grey" />
+
+      <BackgroundImage myPath="image/hero.jpg" type="background" />
+      <PhoneImage myPath="image/dreamwall1.png" type="phone" />
       <HeaderThree color="orange">
         Achieving your goals just got easier...
       </HeaderThree>

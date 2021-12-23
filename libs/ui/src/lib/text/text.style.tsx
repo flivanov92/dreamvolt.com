@@ -30,12 +30,12 @@ export const NormalList = styled.li<T.StyledList>`
 export const HeaderThree = styled.h3<T.StyledText>`
   color: ${({ color = 'orange', theme }) => theme.color[color]};
   margin-left: 60px;
-  margin-top: 12px;
+  margin-top: -200px;
 `;
 
 export const HeaderFour = styled.h4<T.StyledText>`
   color: ${({ color = 'orange', theme }) => theme.color[color]};
-  margin-left: 300px;
-  margin-top: 4rem;
+  margin-left: 250px;
+  margin-top: 1rem;
   /* text-align: center; */
 `;
