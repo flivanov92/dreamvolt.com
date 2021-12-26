@@ -21,13 +21,13 @@ export const NormalList = styled.li<T.StyledList>`
   margin-left: 50px;
 `;
 
-export const HeaderThree = styled.h3<T.StyledText>`
+export const HeaderThree = styled.h3<T.HeaderThree>`
   color: ${({ color = 'orange', theme }) => theme.color[color]};
   margin-left: 60px;
   margin-top: -200px;
 `;
 
-export const HeaderFour = styled.h4<T.StyledText>`
+export const HeaderFour = styled.h4<T.HeaderFour>`
   color: ${({ color = 'orange', theme }) => theme.color[color]};
   margin-left: 250px;
   margin-top: 1rem;
@@ -38,4 +38,15 @@ export const HeaderOne = styled.h1<T.StyledList>`
   color: ${({ color = 'black', theme }) => theme.color[color]};
   text-align: center;
   font-size: 36px;
+`;
+
+export const ShadowParagraph = styled.p<T.ShadowP>`
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  padding: 20px;
+  margin: 40px 550px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 25%);
+  color: ${({ color = 'lightgrey', theme }) => theme.color[color]};
 `;

@@ -1,12 +1,15 @@
 /* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import { ThemeProvider } from 'styled-components';
-import { Logo, TopNav, Text, theme, Image as UIImage } from '@ai/ui';
+import { Logo, TopNav, Text, theme, Image as UIImage, Link } from '@ai/ui';
 import {
   NormalList,
   HeaderThree,
   HeaderFour,
+  ShadowParagraph,
+  HeaderOne,
 } from 'libs/ui/src/lib/text/text.style';
 import { BackgroundImage, PhoneImage } from 'libs/ui/src/lib/image/image.style';
+import { Alink } from 'libs/ui/src/lib/link/link.style';
 // import Bimage from 'libs/ui/src/lib/image/image';
 // import { Pimage, Abutton } from 'libs/ui/src/lib/image/image';
 
@@ -71,9 +74,16 @@ export function Index() {
       <HeaderThree color="orange">
         Achieving your goals just got easier...
       </HeaderThree>
-      <UIImage myPath="btn-apple.png" type="button" />
+      <Alink href="https://apps.apple.com/tt/app/dreamvolt/id1496737573">
+        <UIImage myPath="btn-apple.png" type="button" />
+      </Alink>
       <UIImage myPath="btn-google.png" type="button" />
       <HeaderFour color="grey">Android is coming soon..</HeaderFour>
+      <HeaderOne>Dreamvolt Education</HeaderOne>
+      <ShadowParagraph text="description">
+        Dreamvolt is a goals and targets setting platform, that provides you
+        with pathways to success.
+      </ShadowParagraph>
     </ThemeProvider>
   );
 }

@@ -58,7 +58,18 @@ const Link = ({
   }
 };
 
+const Atag = ({ to }: T.Link) => {
+  <S.Alink to={to}></S.Alink>;
+};
+
 Link.defaultProps = {
+  title: 'dreamvolt',
+  destination: '#',
+  linkType: 'normal',
+  text: 'dreamvolt',
+  color: 'blue',
+};
+Atag.defaultProps = {
   title: 'dreamvolt',
   destination: '#',
   linkType: 'normal',

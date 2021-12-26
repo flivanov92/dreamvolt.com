@@ -7,12 +7,12 @@ export interface Text {
 }
 export interface StyledText {
   children?: ReactNode;
-  color: color;
+  color?: color;
 }
 
 export interface StyledList {
   children?: ReactNode;
-  color: color;
+  color?: color;
 }
 export interface NormalList extends StyledList {
   text: string;
@@ -23,9 +23,16 @@ export interface UnorderedList extends StyledList {
 }
 
 export interface HeaderThree extends StyledText {
-  text: string;
+  text?: string;
 }
 
 export interface HeaderFour extends StyledText {
+  text?: string;
+}
+export interface HeaderOne extends StyledText {
+  text?: string;
+}
+
+export interface ShadowP extends StyledText {
   text: string;
 }

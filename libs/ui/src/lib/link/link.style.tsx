@@ -59,3 +59,8 @@ export const LinkContact = styled.a<T.Link>`
   ${common}
   ${decorationNone}
 `;
+
+export const Alink = styled.a<T.Link>`
+  text-decoration: none;
+  font-weight: 400;
+`;
