@@ -12,6 +12,15 @@ const BackgroundImage = ({ type, myPath }: T.MyImage) => {
     case 'phone':
     default:
       return <S.PhoneImage myPath={myPath} />;
+
+    case 'purplebackground':
+      return <S.PurpleBackground myPath={myPath} />;
+
+    case 'evbutton':
+      return <S.EvButton myPath={myPath} />;
+
+    case 'evphoneimage':
+      return <S.EvPhoneImage myPath={myPath} />;
   }
 };
 

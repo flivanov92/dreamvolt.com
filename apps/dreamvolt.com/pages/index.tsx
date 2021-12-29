@@ -8,7 +8,13 @@ import {
   ShadowParagraph,
   HeaderOne,
 } from 'libs/ui/src/lib/text/text.style';
-import { BackgroundImage, PhoneImage } from 'libs/ui/src/lib/image/image.style';
+import {
+  BackgroundImage,
+  EvButton,
+  EvPhoneImage,
+  PhoneImage,
+  PurpleBackground,
+} from 'libs/ui/src/lib/image/image.style';
 import { Alink } from 'libs/ui/src/lib/link/link.style';
 // import Bimage from 'libs/ui/src/lib/image/image';
 // import { Pimage, Abutton } from 'libs/ui/src/lib/image/image';
@@ -84,6 +90,12 @@ export function Index() {
         Dreamvolt is a goals and targets setting platform, that provides you
         with pathways to success.
       </ShadowParagraph>
+      <PhoneImage myPath="image/dreamwall1.png" type="phone" />
+      <PurpleBackground myPath="image/bg-4-1.jpg" type="purplebackground" />
+      <EvPhoneImage myPath="image/dreamwall1.png" type="evphoneimage" />
+      <Alink href="https://apps.apple.com/tt/app/dreamvolt/id1496737573">
+        <EvButton myPath="btn-apple.png" type="evbutton" />
+      </Alink>
     </ThemeProvider>
   );
 }
