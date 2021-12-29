@@ -25,10 +25,10 @@ export const PurpleBackground = styled.div<T.MyImage>`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${({ myPath }) => myPath});
-  width: 800px;
-  height: 600px;
+  width: 30%;
+  height: 400px;
   position: relative;
-  left: 700px;
+  left: 800px;
   bottom: 30px;
 `;
 
@@ -53,7 +53,7 @@ export const EvPhoneImage = styled.div<T.MyImage>`
   width: 11%;
   height: 42%;
   left: 730px;
-  top: 1350px;
+  top: 1250px;
   /* bottom: 700 px; */
 `;
 
@@ -73,7 +73,7 @@ export const EvButton = styled.div<T.MyImage>`
   background-size: cover;
   background-image: url('/image/${({ myPath }) => myPath}');
   position: absolute;
-  top: 1650px;
+  top: 1550px;
   left: 760px;
 
   /* margin: 0 auto;
