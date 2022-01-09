@@ -7,4 +7,6 @@ export interface MyImage {
     | 'evbutton'
     | 'evphoneimage';
   myPath?: string;
+  location: 'bottom' | 'center' | 'null';
+  bottom?: '2100px';
 }

@@ -38,6 +38,7 @@ export const HeaderOne = styled.h1<T.StyledList>`
   color: ${({ color = 'black', theme }) => theme.color[color]};
   text-align: center;
   font-size: 36px;
+  margin-top: 60px;
 `;
 
 export const ShadowParagraph = styled.p<T.ShadowP>`

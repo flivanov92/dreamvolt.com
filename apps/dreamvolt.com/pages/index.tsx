@@ -1,6 +1,14 @@
 /* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import { ThemeProvider } from 'styled-components';
-import { Logo, TopNav, Text, theme, Image as UIImage, Link } from '@ai/ui';
+import {
+  Logo,
+  TopNav,
+  Text,
+  theme,
+  Image as UIImage,
+  Link as MyLink,
+  List as MyList,
+} from '@ai/ui';
 import {
   NormalList,
   HeaderThree,
@@ -16,6 +24,7 @@ import {
   PurpleBackground,
 } from 'libs/ui/src/lib/image/image.style';
 import { Alink } from 'libs/ui/src/lib/link/link.style';
+import { Arrowdown, Sevlisticons } from 'libs/ui/src/lib/list/list.style';
 // import Bimage from 'libs/ui/src/lib/image/image';
 // import { Pimage, Abutton } from 'libs/ui/src/lib/image/image';
 
@@ -75,27 +84,62 @@ export function Index() {
       <Text text="Belive" color="grey" />
       <Text text="Achieve" color="grey" />
 
-      <BackgroundImage myPath="image/hero.jpg" type="background" />
-      <PhoneImage myPath="image/dreamwall1.png" type="phone" />
+      <BackgroundImage
+        myPath="image/hero.jpg"
+        type="background"
+        location="null"
+      />
+      <PhoneImage myPath="image/dreamwall1.png" type="phone" location="null" />
       <HeaderThree color="orange">
         Achieving your goals just got easier...
       </HeaderThree>
       <Alink href="https://apps.apple.com/tt/app/dreamvolt/id1496737573">
-        <UIImage myPath="btn-apple.png" type="button" />
+        <UIImage myPath="btn-apple.png" type="button" location="null" />
       </Alink>
-      <UIImage myPath="btn-google.png" type="button" />
+      <UIImage myPath="btn-google.png" type="button" location="null" />
       <HeaderFour color="grey">Android is coming soon..</HeaderFour>
-      <HeaderOne>Dreamvolt Education</HeaderOne>
+      <Arrowdown></Arrowdown>
+
+      <HeaderOne>Dreamvolt Everyone</HeaderOne>
       <ShadowParagraph text="description">
         Dreamvolt is a goals and targets setting platform, that provides you
         with pathways to success.
       </ShadowParagraph>
-      <PhoneImage myPath="image/dreamwall1.png" type="phone" />
-      <PurpleBackground myPath="image/bg-4-1.jpg" type="purplebackground" />
-      <EvPhoneImage myPath="image/dreamwall1.png" type="evphoneimage" />
-      <Alink href="https://apps.apple.com/tt/app/dreamvolt/id1496737573">
-        <EvButton myPath="btn-apple.png" type="evbutton" />
+      <PurpleBackground
+        myPath="image/bg-4-1.jpg"
+        type="purplebackground"
+        location="null"
+      />
+      <EvPhoneImage
+        myPath="image/dreamwall1.png"
+        type="evphoneimage"
+        location="center"
+      />
+      <Alink href="https//apps.apple.com/tt/app/dreamvolt/id1496737573">
+        <EvButton myPath="btn-apple.png" type="evbutton" location="null" />
       </Alink>
+
+      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
+      <EvPhoneImage
+        myPath="image/dreamwall1.png"
+        type="evphoneimage"
+        location="bottom"
+      />
+      <Sevlisticons>hi</Sevlisticons>
+
+      <HeaderOne>Dreamvolt Education</HeaderOne>
+      <ShadowParagraph text="description">
+        Dreamvolt Education is tailored for Schools & Universities. Providing a
+        safe and secure environment for students to unlock their ambitions and
+        bring their dreams to life.
+      </ShadowParagraph>
+      <PurpleBackground
+        myPath="image/bg-4-1.jpg"
+        type="purplebackground"
+        location="null"
+      />
+
+      <EvButton myPath="btn-apple.png" type="evbutton" location="null" />
     </ThemeProvider>
   );
 }

@@ -8,6 +8,7 @@ const theme: DefaultTheme = {
     pink: '#e70fc6fa',
     orange: '#f8ab18',
     lightgrey: '#25292a80',
+    lightblue: '#afeeee',
   },
 };
 

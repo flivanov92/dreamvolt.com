@@ -1,26 +1,26 @@
 import * as S from './image.style';
 import * as T from './image.type';
 
-const BackgroundImage = ({ type, myPath }: T.MyImage) => {
+const BackgroundImage = ({ type, myPath, location }: T.MyImage) => {
   switch (type) {
     case 'button':
-      return <S.Button myPath={myPath} />;
+      return <S.Button myPath={myPath} location={location} />;
 
     case 'background':
-      return <S.BackgroundImage myPath={myPath} />;
+      return <S.BackgroundImage myPath={myPath} location={location} />;
 
     case 'phone':
     default:
-      return <S.PhoneImage myPath={myPath} />;
+      return <S.PhoneImage myPath={myPath} location={location} />;
 
     case 'purplebackground':
-      return <S.PurpleBackground myPath={myPath} />;
+      return <S.PurpleBackground myPath={myPath} location={location} />;
 
     case 'evbutton':
-      return <S.EvButton myPath={myPath} />;
+      return <S.EvButton myPath={myPath} location={location} />;
 
     case 'evphoneimage':
-      return <S.EvPhoneImage myPath={myPath} />;
+      return <S.EvPhoneImage myPath={myPath} location={location} />;
   }
 };
 

@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components';
 import * as T from './image.type';
 
-const bpositionMap = {
-  left: '',
-  center: '',
+const locationMap = {
+  bottom: '2100px',
+  center: '1250px',
+  null: '0',
 };
 
 export const BackgroundImage = styled.div<T.MyImage>`
@@ -53,7 +54,8 @@ export const EvPhoneImage = styled.div<T.MyImage>`
   width: 11%;
   height: 42%;
   left: 730px;
-  top: 1250px;
+  top: ${({ location }) => locationMap[location]};
+  z-index: 20;
   /* bottom: 700 px; */
 `;
 
@@ -75,6 +77,7 @@ export const EvButton = styled.div<T.MyImage>`
   position: absolute;
   top: 1550px;
   left: 760px;
+  margin-top: 10px;
 
   /* margin: 0 auto;
   margin-bottom: 50px; */
