@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 import * as T from './image.type';
 
 const locationMap = {
-  bottom: '2100px',
-  center: '1250px',
+  bottom: '2050px',
+  center: '1320px',
   null: '0',
 };
 
@@ -65,8 +65,11 @@ export const Button = styled.div<T.MyImage>`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('/image/${({ myPath }) => myPath}');
+  /* display: flex;
+  flex-direction: row; */
   display: inline-block;
   margin-left: 50px;
+  /* position: absolute; */
 `;
 export const EvButton = styled.div<T.MyImage>`
   width: 151px;
@@ -75,10 +78,6 @@ export const EvButton = styled.div<T.MyImage>`
   background-size: cover;
   background-image: url('/image/${({ myPath }) => myPath}');
   position: absolute;
-  top: 1550px;
   left: 760px;
-  margin-top: 10px;
-
-  /* margin: 0 auto;
-  margin-bottom: 50px; */
+  z-index: 20;
 `;

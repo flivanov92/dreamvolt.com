@@ -8,6 +8,7 @@ import {
   Image as UIImage,
   Link as MyLink,
   List as MyList,
+  Reset,
 } from '@ai/ui';
 import {
   NormalList,
@@ -25,6 +26,7 @@ import {
 } from 'libs/ui/src/lib/image/image.style';
 import { Alink } from 'libs/ui/src/lib/link/link.style';
 import { Arrowdown, Sevlisticons } from 'libs/ui/src/lib/list/list.style';
+import { linkList } from '../data/link-list';
 // import Bimage from 'libs/ui/src/lib/image/image';
 // import { Pimage, Abutton } from 'libs/ui/src/lib/image/image';
 
@@ -35,45 +37,9 @@ export function Index() {
    * Note: The corresponding styles are in the ./index.styled-components file.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const linkList: any = [
-    {
-      title: 'mynav is cool',
-      destination: '/',
-      text: 'home',
-      linkType: 'normal',
-      color: 'blue',
-    },
-    {
-      title: 'mynav is cool',
-      destination: '/contact',
-      text: 'everyone',
-      linkType: 'normal',
-      color: 'grey',
-    },
-    {
-      title: 'mynav is cool',
-      destination: '/portocale',
-      text: 'education',
-      linkType: 'normal',
-      color: 'grey',
-    },
-    {
-      title: 'mynav is cool',
-      destination: '/kiwi',
-      text: 'contact',
-      linkType: 'normal',
-      color: 'grey',
-    },
-    {
-      title: 'mynav is cool',
-      destination: '/grefe',
-      text: 'media',
-      linkType: 'normal',
-      color: 'grey',
-    },
-  ];
   return (
     <ThemeProvider theme={theme}>
+      <Reset />
       <Logo imagePath="image/dv.jpg" size="small" title="salut" />
       <TopNav linkList={linkList} />
 
@@ -115,17 +81,23 @@ export function Index() {
         type="evphoneimage"
         location="center"
       />
-      <Alink href="https//apps.apple.com/tt/app/dreamvolt/id1496737573">
-        <EvButton myPath="btn-apple.png" type="evbutton" location="null" />
+      <Alink href="https://apps.apple.com/tt/app/dreamvolt/id1496737573">
+        <EvButton myPath="btn-apple.png" type="evbutton" location="bottom" />
       </Alink>
 
       <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
+      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
+      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
+      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
+      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
+      <Sevlisticons>hi</Sevlisticons>
+      <Sevlisticons>hi</Sevlisticons>
+      <Sevlisticons>hi</Sevlisticons>
       <EvPhoneImage
         myPath="image/dreamwall1.png"
         type="evphoneimage"
         location="bottom"
       />
-      <Sevlisticons>hi</Sevlisticons>
 
       <HeaderOne>Dreamvolt Education</HeaderOne>
       <ShadowParagraph text="description">
@@ -138,8 +110,9 @@ export function Index() {
         type="purplebackground"
         location="null"
       />
-
-      <EvButton myPath="btn-apple.png" type="evbutton" location="null" />
+      <Alink href="https://apps.apple.com/tt/app/dreamvolt/id1496737573">
+        <EvButton myPath="btn-apple.png" type="evbutton" location="null" />
+      </Alink>
     </ThemeProvider>
   );
 }

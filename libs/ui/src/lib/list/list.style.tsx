@@ -2,13 +2,13 @@ import styled, { css } from 'styled-components';
 import * as T from './list.type';
 
 export const Sevlisticons = styled.li<T.Tevlisticons>`
-  display: flex;
   flex-direction: column;
-  /* display: inline-block; */
+  display: inline;
   list-style-type: none;
-  gap: 2rem;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 0px;
+  margin-left: 30px;
+  gap: 20px;
 `;
 
 export const Arrowdown = styled.div<T.Tevlisticons>`
@@ -25,5 +25,6 @@ export const Arrowdown = styled.div<T.Tevlisticons>`
     content: '\\ea3e';
     color: black;
     font-size: 20px;
+    font-family: 'dreamvolt';
   }
 `;
