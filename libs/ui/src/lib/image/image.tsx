@@ -1,10 +1,17 @@
 import * as S from './image.style';
 import * as T from './image.type';
 
-const BackgroundImage = ({ type, myPath, location }: T.MyImage) => {
+export const BackgroundImage = ({
+  type,
+  myPath,
+  location,
+  dataTestid,
+}: T.MyImage) => {
   switch (type) {
     case 'button':
-      return <S.Button myPath={myPath} location={location} />;
+      return (
+        <S.Button myPath={myPath} location={location} dataTestid="image" />
+      );
 
     case 'background':
       return <S.BackgroundImage myPath={myPath} location={location} />;

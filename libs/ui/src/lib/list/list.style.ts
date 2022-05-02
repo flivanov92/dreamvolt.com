@@ -1,14 +1,13 @@
 import styled, { css } from 'styled-components';
 import * as T from './list.type';
 
-export const Sevlisticons = styled.li<T.Tevlisticons>`
-  flex-direction: column;
-  display: inline;
-  list-style-type: none;
+export const Sevlisticons = styled.div`
+  display: flex;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 40px;
   margin-left: 30px;
   gap: 20px;
+  justify-content: center;
 `;
 
 export const Arrowdown = styled.div<T.Tevlisticons>`

@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
 export interface Tevlisticons {
-  children?: string;
+  list?: string[];
+  children?: ReactNode;
+  type?: 'arrow';
 }

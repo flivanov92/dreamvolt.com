@@ -1,9 +1,9 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import * as T from './image.type';
 
 const locationMap = {
-  bottom: '2050px',
-  center: '1320px',
+  bottom: '2400px',
+  center: '1600px',
   null: '0',
 };
 
@@ -15,18 +15,18 @@ export const BackgroundImage = styled.div<T.MyImage>`
   /* grid-template-columns: repeat(2, 1fr); */
   /* grid-gap: 10px; */
   background-image: url(${({ myPath }) => myPath});
-  width: 70%;
-  height: 500px;
+  width: 50%;
+  height: 800px;
   position: relative;
-  bottom: 200px;
-  left: 300px;
+  bottom: 250px;
+  left: 500px;
 `;
 export const PurpleBackground = styled.div<T.MyImage>`
   background-position-x: right;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${({ myPath }) => myPath});
-  width: 30%;
+  width: 22%;
   height: 400px;
   position: relative;
   left: 800px;
@@ -36,15 +36,12 @@ export const PurpleBackground = styled.div<T.MyImage>`
 export const PhoneImage = styled.div<T.MyImage>`
   background-image: url(${({ myPath }) => myPath});
   background-repeat: no-repeat;
-  /* background-size: cover; */
   margin-left: 30px;
-  /* grid-column: 2/3; */
-  /* grid-row: 2/4; */
   position: absolute;
   width: 11%;
   height: 42%;
-  left: 1000px;
-  bottom: 100px;
+  left: 930px;
+  bottom: 200px;
 `;
 export const EvPhoneImage = styled.div<T.MyImage>`
   background-image: url(${({ myPath }) => myPath});
@@ -53,10 +50,9 @@ export const EvPhoneImage = styled.div<T.MyImage>`
   position: absolute;
   width: 11%;
   height: 42%;
-  left: 730px;
+  left: 930px;
   top: ${({ location }) => locationMap[location]};
   z-index: 20;
-  /* bottom: 700 px; */
 `;
 
 export const Button = styled.div<T.MyImage>`
@@ -65,11 +61,8 @@ export const Button = styled.div<T.MyImage>`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('/image/${({ myPath }) => myPath}');
-  /* display: flex;
-  flex-direction: row; */
   display: inline-block;
   margin-left: 50px;
-  /* position: absolute; */
 `;
 export const EvButton = styled.div<T.MyImage>`
   width: 151px;
@@ -78,6 +71,6 @@ export const EvButton = styled.div<T.MyImage>`
   background-size: cover;
   background-image: url('/image/${({ myPath }) => myPath}');
   position: absolute;
-  left: 760px;
+  left: 965px;
   z-index: 20;
 `;

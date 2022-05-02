@@ -9,4 +9,5 @@ export interface MyImage {
   myPath?: string;
   location: 'bottom' | 'center' | 'null';
   bottom?: '2100px';
+  dataTestid?: string;
 }

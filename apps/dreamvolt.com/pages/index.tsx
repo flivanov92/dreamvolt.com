@@ -25,8 +25,8 @@ import {
   PurpleBackground,
 } from 'libs/ui/src/lib/image/image.style';
 import { Alink } from 'libs/ui/src/lib/link/link.style';
-import { Arrowdown, Sevlisticons } from 'libs/ui/src/lib/list/list.style';
 import { linkList } from '../data/link-list';
+import { Arrowdown } from 'libs/ui/src/lib/list/list.style';
 // import Bimage from 'libs/ui/src/lib/image/image';
 // import { Pimage, Abutton } from 'libs/ui/src/lib/image/image';
 
@@ -37,6 +37,7 @@ export function Index() {
    * Note: The corresponding styles are in the ./index.styled-components file.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const navList = ['Engages', 'Achieve', 'Plan', 'Student'];
   return (
     <ThemeProvider theme={theme}>
       <Reset />
@@ -64,12 +65,12 @@ export function Index() {
       </Alink>
       <UIImage myPath="btn-google.png" type="button" location="null" />
       <HeaderFour color="grey">Android is coming soon..</HeaderFour>
-      <Arrowdown></Arrowdown>
 
+      <Arrowdown></Arrowdown>
       <HeaderOne>Dreamvolt Everyone</HeaderOne>
       <ShadowParagraph text="description">
-        Dreamvolt is a goals and targets setting platform, that provides you
-        with pathways to success.
+        Dreamvolt is setting targets for platforms, that provides you with
+        pathways to success.
       </ShadowParagraph>
       <PurpleBackground
         myPath="image/bg-4-1.jpg"
@@ -85,20 +86,16 @@ export function Index() {
         <EvButton myPath="btn-apple.png" type="evbutton" location="bottom" />
       </Alink>
 
-      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
-      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
-      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
-      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
-      <Sevlisticons>hisdasdlkalsdalsdkasdsldkasldkasldkas</Sevlisticons>
-      <Sevlisticons>hi</Sevlisticons>
-      <Sevlisticons>hi</Sevlisticons>
-      <Sevlisticons>hi</Sevlisticons>
+      <MyList list={navList} />
+      <MyList type="arrow" />
+
       <EvPhoneImage
         myPath="image/dreamwall1.png"
         type="evphoneimage"
         location="bottom"
       />
 
+      <Arrowdown></Arrowdown>
       <HeaderOne>Dreamvolt Education</HeaderOne>
       <ShadowParagraph text="description">
         Dreamvolt Education is tailored for Schools & Universities. Providing a
@@ -110,6 +107,7 @@ export function Index() {
         type="purplebackground"
         location="null"
       />
+      <Arrowdown></Arrowdown>
       <Alink href="https://apps.apple.com/tt/app/dreamvolt/id1496737573">
         <EvButton myPath="btn-apple.png" type="evbutton" location="null" />
       </Alink>

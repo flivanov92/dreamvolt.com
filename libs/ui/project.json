@@ -35,7 +35,9 @@
       "outputs": ["coverage/libs/ui"],
       "options": {
         "jestConfig": "libs/ui/jest.config.js",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "codeCoverage": true,
+        "coverageReporters": ["text", "text-summary", "html"]
       }
     }
   }
